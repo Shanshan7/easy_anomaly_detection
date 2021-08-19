@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from model.wide_resnet50_2 import wide_resnet50_2
+from model_block.backbone.wide_resnet50_2 import wide_resnet50_2
 
 
 class STPM(nn.Module):

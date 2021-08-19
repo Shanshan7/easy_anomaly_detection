@@ -3,11 +3,11 @@ import torch
 import numpy as np
 import os
 import pickle
-from sampling_methods.kcenter_greedy import kCenterGreedy
+from post_process.kcenter_greedy import kCenterGreedy
 from sklearn.random_projection import SparseRandomProjection
 
-from data_loader import get_train_dataloader
-from models import STPM
+from data_loader.one_class_dataset import get_train_dataloader
+from model.one_class.models import STPM
 from inference import OneClassInference
 from utils import reshape_embedding
 
